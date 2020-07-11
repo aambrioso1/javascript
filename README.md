@@ -1,2 +1,2 @@
 # javascript
-A repository for files created as I learn javascript.
+A repository for files created as I learn JavaScript.
