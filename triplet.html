@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+/* See https://en.wikipedia.org/wiki/Pythagorean_triple for formulas */
+function Triplet() {
+  	var m = document.getElementById("first").value;
+  	var n = document.getElementById("second").value;
+
+  	var a = m**2 - n**2;
+  	var b = 2*(m*n);
+  	var c = m**2 + n**2;
+  	document.getElementById("output1").innerHTML = a;
+  	document.getElementById("output2").innerHTML = b;
+  	document.getElementById("output3").innerHTML = c;
+  	document.getElementById("output4").innerHTML = a**2 + b**2;
+  	document.getElementById("output5").innerHTML = c**2;
+
+}
+</script>
+
+<h1>Pythagorean Triplet Generator</h1>
+
+Pick two positive integers.   
+To generate the legs of a right triangle, make the first number bigger than the second.
+<p>My first number is <input type="number" id="first" placeholder=""></p>
+<p>My second number is <input type="number" id="second" placeholder=""></p>        
+
+<input type="button" onclick="Triplet()" value="Click here to generate a Pythagorean triplet.">
+<p id="output1"></p>
+<p id="output2"></p>
+<p id="output3"></p>
+<p id="output4"></p>
+<p id="output5"></p>
+
+</body>
+</html>
